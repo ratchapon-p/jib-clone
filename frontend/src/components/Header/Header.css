@@ -3,12 +3,11 @@
     height: 100%;
 }
 
-.image-logo{
-
-}
-
 .jib-logo{
+    position: relative;
+    left: 5%;
     width: 7.5%;
+    margin-left: 80px;
 }
 
 .header-content{
@@ -22,15 +21,23 @@
 .search-header{
     width: 60%;
     display: flex;
+    padding-left: 100px;
 }
 
 .search-header input{
-    border: none;
-    width: 100%;
+    border: 1px #dadada;
+    width: 80%;
     padding: 0.5rem;
-    font-size: 16px;
+    font-size: 14px;
+    outline: none;
 
 }
+
+.search-header input:focus{
+    border: #F2591D;
+
+}
+
 
 .search-header select{
     border: none;
@@ -119,3 +126,41 @@
     justify-content: space-around;
     width: 13%;
 }
+
+.navbar{
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: row;
+    margin: 3px;
+}
+
+.navbar p{
+    padding: 1px 5px;
+    font-size: 14px;
+    margin: 5px;
+    text-align: center;
+    
+}
+
+.navbar p:hover{
+    background-color: #dadada;
+
+}
+
+.select{
+    outline: none;
+    text-align: center;
+    align-items: center;
+    border: none;
+    background: none;
+    font-size: 14px;
+    margin: 5px;
+    padding: 1px 5px;
+
+}
+
+.select:hover{
+    background-color: #dadada;
+
+}
+

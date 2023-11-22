@@ -44,7 +44,8 @@ const Header = () => {
   };
 
   return (
-    <div className="header">
+    <div className="all-header">
+          <div className="header">
       <div className="header-content">
         <img src={logo} className="jib-logo" onClick={onClickHeader} />
         <form className="search-header" onSubmit={onSearchSubmit}>
@@ -78,6 +79,33 @@ const Header = () => {
           <img src={flag} />
         </div>
       </div>
+    </div>
+    <div className="navbar">
+      <p>หน้าแรก</p>
+      <select className="select">
+        <option>สินค้า</option>
+      </select>
+      <select className="select">
+        <option>จัดสเปค/คอมประกอบ</option>
+      </select>
+      <select className="select">
+        <option>โปรโมชั่น</option>
+      </select>
+      <p>ตารางราคา</p>
+      <p>เงื่อนไขบริการ</p>
+      <select className="select">
+        <option>การรับประกัน</option>
+      </select>
+      <select className="select">
+        <option>ตรวจสอบการนำส่ง</option>
+      </select>
+      <p>แนะนำการบริการ</p>
+      <select className="select">
+        <option>ติดต่อเรา</option>
+      </select>
+      <p>ติดต่อสาขา</p>
+
+    </div>
     </div>
   );
 };
