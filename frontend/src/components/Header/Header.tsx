@@ -6,8 +6,17 @@ import {
   MagnifyingGlassIcon,
   ShoppingCartIcon,
   UserIcon,
+  ChevronDownIcon 
 } from "@heroicons/react/20/solid";
 import { Link } from "react-router-dom";
+import { ClickAwayListener } from '@mui/base/ClickAwayListener';
+import ComputerSpec from "./NavBar/ComputerSpec";
+import Product from "./NavBar/Product";
+import Promotion from "./NavBar/Promotion";
+import Warranty from "./NavBar/Warranty";
+import Shipping from "./NavBar/Shipping";
+import Contact from "./NavBar/Contact";
+
 
 const Header = () => {
   const [searchItem, setSearchItem] = useState("");
@@ -25,7 +34,6 @@ const Header = () => {
   //   { label: "โน๊ตบุ๊ค", value: "notebook" },
   //   { label: "โน๊ตบุ๊คโน๊ตบุ๊คโน๊ตบุ๊คโน๊ตบุ๊คโน๊ตบุ๊ค", value: "none" },
   // ];
-
 
   const onClickHeader = () => {
     window.location.href = "/";
@@ -69,29 +77,26 @@ const Header = () => {
       </div>
     </div>
     <div className="navbar">
-      <p>หน้าแรก</p>
-      <select className="select">
-        <option>สินค้า</option>
-      </select>
-      <select className="select">
-        <option>จัดสเปค/คอมประกอบ</option>
-      </select>
-      <select className="select">
-        <option>โปรโมชั่น</option>
-      </select>
-      <p>ตารางราคา</p>
-      <p>เงื่อนไขบริการ</p>
-      <select className="select">
-        <option>การรับประกัน</option>
-      </select>
-      <select className="select">
-        <option>ตรวจสอบการนำส่ง</option>
-      </select>
-      <p>แนะนำการบริการ</p>
-      <select className="select">
-        <option>ติดต่อเรา</option>
-      </select>
-      <p>ติดต่อสาขา</p>
+      <p className="paragraph-nav">หน้าแรก</p>
+
+    <Product />
+
+    <ComputerSpec />
+
+    <Promotion />
+    
+      <p className="paragraph-nav">ตารางราคา</p>
+      <p className="paragraph-nav">เงื่อนไขบริการ</p>
+
+      <Warranty />
+
+      <Shipping />
+
+      <p className="paragraph-nav">แนะนำการบริการ</p>
+
+      <Contact />
+
+      <p className="paragraph-nav">ติดต่อสาขา</p>
 
     </div>
     </div>
