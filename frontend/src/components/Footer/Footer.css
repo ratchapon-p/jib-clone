@@ -1,0 +1,167 @@
+.footer{
+    background: #666;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    color: white;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.footer h3{
+    font-size: 18px;
+    font-weight: 550;
+}
+
+.footer-top{
+    display: flex;
+    justify-content: space-between;
+    padding: 1.5%;
+    
+}
+
+.sub-ul{
+    padding-left: 20%;
+}
+
+.footer-jib{
+    width: 200px;
+
+}
+
+.footer-support{
+    width: 200px;
+
+}
+
+.footer-service{
+    width: 200px;
+
+}
+
+.footer-qna{
+    width: 200px;
+
+}
+
+.footer-title{
+    margin-top: 10%;
+    padding-left: 25%;
+
+}
+
+.footer-image{
+    margin-top: 10%;
+    padding-left: 5%;
+
+}
+
+.footer-image img{
+    border-radius: 10px;
+}
+
+.footer-title ul{
+    font-size: 11px;
+}
+
+
+.footer-bottom{
+    display: flex;
+    justify-content: space-around;
+    padding: 1%;
+    
+}
+
+.text-head{
+    display: flex;
+    flex-direction: row;
+
+}
+
+.delivery{
+    width: 22%;
+}
+
+.payment{
+    width: 22%;
+}
+
+.social{
+    width: 22%;
+}
+
+.download{
+    width: 22%;
+    
+}
+
+.delivery h3{
+    text-align: center;
+    padding:0 1%;
+    width: 280%;
+
+}
+
+.download h3{
+    padding:0 1%;
+    width: 280%;
+    text-align: center;
+
+}
+
+.social h3{
+    padding:0 1%;
+    width: 280%;
+    text-align: center;
+
+}
+
+.social-icon{
+    padding-top: 2.5%;
+    display: flex;
+    justify-content: center;
+
+}
+
+.logo-icon{
+    width: 16.5%;
+}
+
+.payment h3{
+    padding:0 1%;
+    width: 280%;
+    text-align: center;
+
+}
+
+.payment-image{
+    width: 100%;
+}
+
+.line{
+    margin-top: 3%;
+    height: 1px;
+    width: 100%;
+    border: solid 1px;
+
+}
+
+.app-download{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    padding-left: 8%;
+    
+}
+
+.qr-img{
+    height: 120px;
+}
+
+.appstr-img,.playstr-img{
+    height: 60px;
+
+}
+
