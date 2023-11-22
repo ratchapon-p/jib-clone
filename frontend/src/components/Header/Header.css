@@ -183,9 +183,6 @@
     display: block;
 }
 
-.custom-select:hover{
-
-}
 
 .options-container{
     position: absolute;
@@ -208,9 +205,14 @@
 .navbar .paragraph-nav{
     position: relative;
     top: 7px;
+
 }
 
 .navbar .paragraph-nav:hover{
     background-color: #dadada;
 
+}
+
+.nav-link{
+    color: black;
 }

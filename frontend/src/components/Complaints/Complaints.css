@@ -1,0 +1,40 @@
+.complaints-main{
+    margin: 3% 5%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    border: 0.5px solid #d3d3d3;
+    border-radius: 3px;
+
+}
+
+.complain-text{
+    padding: 5px;
+    align-self: flex-start;
+    background: #e4e4e4;
+    border: 0.5px solid #d3d3d3;
+    width: 100%;
+}
+
+.complain-text p{
+    font-size: 14px;
+}
+
+.complain-input{
+    margin: 10px;
+}
+
+.complain-details{
+    display: flex;
+    flex-direction: row;
+}
+
+.complain-input input{
+    width: 80%;
+}
+
+
+
+
+

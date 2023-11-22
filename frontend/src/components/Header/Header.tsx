@@ -92,7 +92,7 @@ const Header = () => {
 
       <Shipping />
 
-      <p className="paragraph-nav">แนะนำการบริการ</p>
+      <p className="paragraph-nav"><Link to='/complaints' className="nav-link">แนะนำการบริการ</Link></p>
 
       <Contact />
 
