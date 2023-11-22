@@ -20,24 +20,12 @@ const Header = () => {
     e.preventDefault();
   };
 
-  const categories = [
-    { label: "หมวดหมู่สินค้า", value: "categories" },
-    { label: "โน๊ตบุ๊ค", value: "notebook" },
-    { label: "โน๊ตบุ๊คโน๊ตบุ๊คโน๊ตบุ๊คโน๊ตบุ๊คโน๊ตบุ๊ค", value: "none" },
-  ];
+  // const categories = [
+  //   { label: "หมวดหมู่สินค้า", value: "categories" },
+  //   { label: "โน๊ตบุ๊ค", value: "notebook" },
+  //   { label: "โน๊ตบุ๊คโน๊ตบุ๊คโน๊ตบุ๊คโน๊ตบุ๊คโน๊ตบุ๊ค", value: "none" },
+  // ];
 
-  const maxLabel = Math.max(
-    ...categories.map((categories) => categories.label.length)
-  );
-  const baseWidth = 1;
-  const dynamicWidth = baseWidth + maxLabel * 3;
-
-  const customStyles = {
-    control: (provided: any) => ({
-      ...provided,
-      width: dynamicWidth,
-    }),
-  };
 
   const onClickHeader = () => {
     window.location.href = "/";
