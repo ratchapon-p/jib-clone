@@ -6,17 +6,16 @@ import {
   MagnifyingGlassIcon,
   ShoppingCartIcon,
   UserIcon,
-  ChevronDownIcon 
+  ChevronDownIcon,
 } from "@heroicons/react/20/solid";
 import { Link } from "react-router-dom";
-import { ClickAwayListener } from '@mui/base/ClickAwayListener';
+import { ClickAwayListener } from "@mui/base/ClickAwayListener";
 import ComputerSpec from "./NavBar/ComputerSpec";
 import Product from "./NavBar/Product";
 import Promotion from "./NavBar/Promotion";
 import Warranty from "./NavBar/Warranty";
 import Shipping from "./NavBar/Shipping";
 import Contact from "./NavBar/Contact";
-
 
 const Header = () => {
   const [searchItem, setSearchItem] = useState("");
@@ -41,64 +40,67 @@ const Header = () => {
 
   return (
     <div className="all-header">
-          <div className="header">
-      <div className="header-content">
-        <img src={logo} className="jib-logo" onClick={onClickHeader} />
-        <form className="search-header" onSubmit={onSearchSubmit}>
-          <input
-            type="text"
-            value={searchItem}
-            onChange={onSearchChange}
-            placeholder="ค้นหาอะไรดีวันนี้?"
-          />
-          <select>
-            <option>หมวดหมู่สินค้า</option>
-            <option>โน๊ตบุ๊ค</option>
-            <option>โน๊ตบุ๊คโน๊ตบุ๊คโน๊ตบุ๊คโน๊ตบุ๊คโน๊ตบุ๊ค</option>
-          </select>
-          {/* <Select className="select-categories" options={categories}></Select> */}
-          <button>
-            <MagnifyingGlassIcon className="search-icon" />
-          </button>
-        </form>
-        <div className="userandcart">
-          <Link to="/cart" className="header-cart">
-            <ShoppingCartIcon className="cart-icon" />
-            <p>ตะกร้าสินค้า</p>
-          </Link>
-          <Link to="/account" className="header-account">
-            <UserIcon className="user-icon" />
-            <p>บัญชีของฉัน</p>
-          </Link>
-        </div>
-        <div className="flag">
-          <img src={flag} />
+      <div className="header">
+        <div className="header-content">
+          <img src={logo} className="jib-logo" onClick={onClickHeader} />
+          <form className="search-header" onSubmit={onSearchSubmit}>
+            <input
+              type="text"
+              value={searchItem}
+              onChange={onSearchChange}
+              placeholder="ค้นหาอะไรดีวันนี้?"
+            />
+            <select>
+              <option>หมวดหมู่สินค้า</option>
+              <option>โน๊ตบุ๊ค</option>
+              <option>โน๊ตบุ๊คโน๊ตบุ๊คโน๊ตบุ๊คโน๊ตบุ๊คโน๊ตบุ๊ค</option>
+            </select>
+            {/* <Select className="select-categories" options={categories}></Select> */}
+            <button>
+              <MagnifyingGlassIcon className="search-icon" />
+            </button>
+          </form>
+          <div className="userandcart">
+            <Link to="/cart" className="header-cart">
+              <ShoppingCartIcon className="cart-icon" />
+              <p>ตะกร้าสินค้า</p>
+            </Link>
+            <Link to="/account" className="header-account">
+              <UserIcon className="user-icon" />
+              <p>บัญชีของฉัน</p>
+            </Link>
+          </div>
+          <div className="flag">
+            <img src={flag} />
+          </div>
         </div>
       </div>
-    </div>
-    <div className="navbar">
-      <p className="paragraph-nav">หน้าแรก</p>
+      <div className="header-navbar">
+        <p className="paragraph-nav">หน้าแรก</p>
 
-    <Product />
+        <Product />
 
-    <ComputerSpec />
+        <ComputerSpec />
 
-    <Promotion />
-    
-      <p className="paragraph-nav">ตารางราคา</p>
-      <p className="paragraph-nav">เงื่อนไขบริการ</p>
+        <Promotion />
 
-      <Warranty />
+        <p className="paragraph-nav">ตารางราคา</p>
+        <p className="paragraph-nav">เงื่อนไขบริการ</p>
 
-      <Shipping />
+        <Warranty />
 
-      <p className="paragraph-nav"><Link to='/complaints' className="nav-link">แนะนำการบริการ</Link></p>
+        <Shipping />
 
-      <Contact />
+        <p className="paragraph-nav">
+          <Link to="/complaints" className="nav-link">
+            แนะนำการบริการ
+          </Link>
+        </p>
 
-      <p className="paragraph-nav">ติดต่อสาขา</p>
+        <Contact />
 
-    </div>
+        <p className="paragraph-nav">ติดต่อสาขา</p>
+      </div>
     </div>
   );
 };
