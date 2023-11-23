@@ -1,37 +1,98 @@
+.complain-border{
+    background: #f5f5f5;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.complain-outline{
+    background-color: rgb(255, 255, 255);
+    width: 86%;
+    position: relative;
+    left: 7%;
+}
+
 .complaints-main{
-    margin: 3% 5%;
+    margin: 3% 10%;
     display: flex;
     justify-content: center;
     flex-direction: column;
     align-items: center;
-    border: 0.5px solid #d3d3d3;
-    border-radius: 3px;
+    border: 0.5px solid #ddd;
+    border-radius: 5px;
+    
+
 
 }
 
 .complain-text{
-    padding: 5px;
-    align-self: flex-start;
-    background: #e4e4e4;
-    border: 0.5px solid #d3d3d3;
+    padding: 5px 5px 0 5px;
+    background: #f5f5f5;
+    border-bottom: 0.5px solid #ddd;
     width: 100%;
 }
 
 .complain-text p{
     font-size: 14px;
+    align-items: center;
 }
 
 .complain-input{
+    display: block;
+    align-items: center;
     margin: 10px;
+    width: 97.5%;
+
+}
+
+.complain-input input{
+    border-radius: 4px;
+    border: 1px solid #ddd;
+    
 }
 
 .complain-details{
     display: flex;
-    flex-direction: row;
+    justify-content: flex-end;
+    width: 100%;
+    padding: 10px;
 }
 
-.complain-input input{
-    width: 80%;
+.complain-input-details{
+    width: 1000px;
+    padding: 5px 8px;
+
+}
+
+
+
+
+
+
+.complain-qr{
+    padding: 20px;
+    text-align: center;
+
+}
+
+.complain-qr p {
+    font-weight: 500;
+}
+
+.complain-qr-img{
+    width: 260px;
+}
+
+
+
+.footer-img{
+    display: flex;
+    justify-content: center;
+    background-color: white;
+    margin-top: 10px;
+    border-top: 0.5px solid #ddd;
+    padding: 0.5%;
 }
 
 
