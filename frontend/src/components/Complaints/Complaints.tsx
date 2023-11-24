@@ -8,20 +8,29 @@ const Complaints = () => {
       <div className="complain-outline">
         <div className="complaints-main">
           <div className="complain-text">
-            <p>ร้องเรียนหรือแนะนำบริการ</p>
+            <p className="complain-text-p">ร้องเรียนหรือแนะนำบริการ</p>
           </div>
           <form className="complain-input">
             <div className="complain-question">
               <span>
                 ประเภทคำถาม :{" "}
-                <select>
+                <select className="select-complain">
                   <option>ร้องเรียนการสั่งซื้อออนไลน์</option>
+                  <option>ร้องเรียนการบริการของสาขา</option>
+                  <option>ติดตามการเคลมสินค้า</option>
+                  <option>สอบถามรายละเอียดการเคลมสินค้า</option>
+                  <option>สอบถามข้อมูลด้านเทคนิค</option>
+                  <option>สอบถามรายละเอียดลูกค้าขายส่ง</option>
+                  <option>สอบถามราคาและรายละเอียดสินค้า</option>
+                  <option>ร้องเรียนเรื่องอื่นๆ</option>
+
                 </select>
               </span>
             </div>
             <div className="complain-details">
-              <span>
-                รายละเอียด : <input className="complain-input-details" />
+              <span className="detail-of-complain">
+                รายละเอียด : {" "} 
+                  <textarea className="complain-input-details" rows={10} />
               </span>
             </div>
             <div className="complain-details">
@@ -53,12 +62,12 @@ const Complaints = () => {
                 กรอกรหัสภาพ : <input className="complain-input-all" />
               </span>
             </div>
-            <div>
-              <div className="complain-details">
-                <button>ส่งข้อมูล</button>
+            <div className="submit-column">
+              <div className="submit-complain-details">
+                <button className="submit-complain-btn">ส่งข้อมูล</button>
               </div>
-              <div className="complain-details">
-                <button>ยกเลิก</button>
+              <div className="cancel-complain-details">
+                <button className="cancel-complain-btn">ยกเลิก</button>
               </div>
             </div>
           </form>
@@ -68,7 +77,7 @@ const Complaints = () => {
           </div>
         </div>
       </div>
-      <div className="footer-img">
+      <div className="complain-footer-img">
         <img src={complainFt} className="complain-footer" />
       </div>
     </div>
