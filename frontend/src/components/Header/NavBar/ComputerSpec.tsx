@@ -4,6 +4,7 @@ import {
 
     ChevronDownIcon 
   } from "@heroicons/react/20/solid";
+import { Link } from 'react-router-dom';
 
 
 
@@ -41,7 +42,7 @@ const ComputerSpec = () => {
         <p className='select-navbar'>จัดสเปค/คอมประกอบ<ChevronDownIcon className="drop-down" /></p>
         {isOpen && (
           <div className="options-container">
-            <p className="option">จัดสเปคคอมพิวเตอร์</p>
+            <Link className="option" to='/pcspec'>จัดสเปคคอมพิวเตอร์</Link>
             <p className="option">จัดอันดับสเปคคอม</p>
           </div>
         )}

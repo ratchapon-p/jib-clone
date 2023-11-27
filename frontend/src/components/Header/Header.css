@@ -201,11 +201,14 @@
     width: max-content;
     background-color: white;
     z-index: 99;
+    padding: 3%;
 
 }
 
 .option{
     font-size: 14px;
+    text-decoration: none;
+    color: black;
 }
 
 .option:hover{
