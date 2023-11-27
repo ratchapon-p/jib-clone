@@ -15,7 +15,7 @@ import LIQIcon from "../../assets/Pcspec/cpu-lq-ico.png";
 import MonitorIcon from "../../assets/Pcspec/monitor-ico.png";
 import KeyboardIcon from "../../assets/Pcspec/keyboard-ico.png";
 import MouseIcon from "../../assets/Pcspec/mouse-ico.png";
-import { TrophyIcon, MagnifyingGlassIcon } from "@heroicons/react/20/solid";
+import { TrophyIcon, MagnifyingGlassIcon,ChevronUpDownIcon , FunnelIcon  } from "@heroicons/react/20/solid";
 import CpuItem from "./CpuItem/CpuItem";
 
 const Pcspec = () => {
@@ -112,6 +112,7 @@ const Pcspec = () => {
           <div className="pcspec-item-list">
             <div className="pcspec-header-item">
               <div className="pcspec-search-tab">
+                <div className="pcspec-searchandrank">
                 <button className="link-to-ranking">
                   <TrophyIcon className="ranking-icon" /> จัดอันดับสเปคคอม{" "}
                 </button>
@@ -120,9 +121,21 @@ const Pcspec = () => {
                   <input className="search-pcspec-input" />
                   <button className="search-pcspec-btn">ค้นหา</button>
                 </div>
+                </div>
+                <div className='pcspec-filterandsort'>
+                <div className="pcspec-filetr-tab">filter <FunnelIcon className="sort-pcspec-icon"/></div>
+                <div className="pcspec-sort-tab">จัดเรียงโดย <ChevronUpDownIcon className="sort-pcspec-icon"/></div>
+                </div>
+
               </div>
 
-              <div className="pcspec-filetr-tab"></div>
+            </div>
+            <div className="pcspec-item-total">
+              <p className="pcspec-item-total-p">ทั้งหมด</p>&nbsp;
+              <p className="pcspec-item-total-text">'Cpu'</p>&nbsp;
+              <p className="pcspec-item-total-p">59 รายการ</p>&nbsp;
+              <p className="pcspec-item-total-p">จำนวน 1/1 หน้า | หน้าละ 80 รายการ</p>&nbsp;
+
             </div>
             <div className="cpu-list-item-details">
               <CpuItem />

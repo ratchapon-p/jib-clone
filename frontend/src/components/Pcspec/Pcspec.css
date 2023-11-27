@@ -23,6 +23,7 @@
         left: 5%;
         width: 90%;
 
+
     }
 }
 
@@ -219,6 +220,7 @@
     height: 5%;
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
     margin-right: 0.4%;
 }
 
@@ -227,11 +229,12 @@
     background-color: #f0ad4e;
     border: 1px solid #eea236;
     border-radius: 5px;
-    width: 5%;
+    width: 15%;
     height: 30px;
     overflow: hidden;
     white-space: nowrap;
-    font-size: 14px;
+    font-size: 14px;   
+    padding: 2px 5px;
 
 }
 
@@ -246,10 +249,10 @@
 }
 
 .search-pcspec-icon{
-    width: 25px;
+    width: 35px;
     background-color: #fff;
     margin:0 0 0 10px;
-    padding: 2px;
+    padding: 2px 10px;
     border: 1px solid #ddd;
     border-radius: 5px 0 0 5px;
 }
@@ -266,9 +269,44 @@
 
 .search-pcspec-btn{
     border: 1px solid #ddd;
-    font-size: 14px;
-    padding: 1%;
+    font-size: 12px;
+    padding: 1% 2%;
     border-radius:0 5px 5px 0;
     background-color: #fff;
 
+
+}
+
+.pcspec-filetr-tab{
+    font-size: 14px;
+    border: 1px solid #ddd;
+    align-items: center;
+    text-align: center;
+    display: flex;
+    padding: 3px 8px;
+    border-radius: 5px;
+
+}
+
+.pcspec-searchandrank{
+    display: flex;
+}
+
+.pcspec-sort-tab{
+    font-size: 14px;
+    border: 1px solid #ddd;
+    align-items: center;
+    text-align: center;
+    display: flex;
+    padding: 3px 8px;
+    border-radius: 5px;
+
+}
+
+.sort-pcspec-icon{
+    width: 16px;
+}
+
+.pcspec-filterandsort{
+    display: flex;
 }

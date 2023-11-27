@@ -52,7 +52,7 @@
 }
 
 .cpuItem-images-item{
-    width: 75%;
+    width: 55%;
     background: transparent;
 }
 
@@ -93,5 +93,22 @@
     padding: 3px 15px;
     margin: 5px;
 
+}
+
+.pcspec-item-total{
+    display: flex;
+    padding: 0.3% 1%;
+}
+
+.pcspec-item-total-text{
+    margin: 0;
+    color: #ff6600;
+    font-size: 13px;
+
+}
+
+.pcspec-item-total-p{
+    margin: 0;
+    font-size: 13px;
 }
 
