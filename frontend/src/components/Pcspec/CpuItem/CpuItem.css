@@ -1,0 +1,97 @@
+.cpuItem-main{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    padding-right: 0.4%;
+    
+}
+
+.cpuItem-details-text{
+    font-weight: 600;
+    padding: 1%;
+}
+
+.cpuItem-details-text .cpuItem-brand{
+    color: #ff6600;
+
+}
+
+
+.cpuItem-details{
+    width: 25%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 0.5%;
+    border: 1px dotted #ddd;
+}
+
+.cpuItem-details:hover{
+    transition: 0.3s;
+    box-shadow: 0px 4px 8px 5px #c0c0c0;
+
+    .cpuItem-images{
+        transition: 0.5s;
+        background-color: #bbbbbb;
+
+    }
+
+    .cpuItem-brand-details{
+        transition: 0.5s;
+        color: #ff9900;
+    }
+
+
+}
+
+.cpuItem-images{
+    width: 105%;
+    display: flex;
+    justify-content: center;
+}
+
+.cpuItem-images-item{
+    width: 75%;
+    background: transparent;
+}
+
+.cpuItem-details .cpuItem-price-details{
+    margin-left: 75%;
+    
+}
+
+.cpu-item-price-text{
+    margin: 0;
+    display: flex;
+    justify-content: end;
+    
+}
+
+.cpuItem-price{
+    color: #ff6600;
+    font-weight: 600;
+
+}
+
+.add-to-pcspec-btn{
+    text-decoration: none;
+    border: none;
+    background-color: #ff9900;
+    color: #fff;
+    border-radius: 15px;
+    padding: 3px 15px;
+    margin: 5px;
+
+}
+
+.link-to-item-details{
+    text-decoration: none;
+    background-color: #2c3d92;
+    color: #fff;
+    border-radius: 15px;
+    padding: 3px 15px;
+    margin: 5px;
+
+}
+

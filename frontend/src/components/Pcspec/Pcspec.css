@@ -1,3 +1,8 @@
+.pcspec-bg{
+    background-color: #F2F2F2;
+
+}
+
 .pcspec-link-page{
     display: flex;
     align-items: center;
@@ -7,6 +12,19 @@
     border-radius: 5px;
 }
 
+.pcspec-main{
+    width: 100%;
+    background: #fff;
+}
+
+@media (min-width: 1920px) {
+    .pcspec-main{
+        position: relative;
+        left: 5%;
+        width: 90%;
+
+    }
+}
 
 .pcspec-link-page-p{
     margin: 0;
@@ -33,11 +51,19 @@
     width: 20%;
 }
 
+@media (width: 1920px){
+    
+.pcspec-choose-item{
+    width: 25%;
+}
+}
+
 .choose-spec-text{
     background-color: #F2F2F2;
     padding: 4%;
     padding-bottom: 0.5%;
     height: 5%;
+    margin-left: 1.5%;
 
 }
 
@@ -166,6 +192,7 @@
     display: flex;
     justify-content: center;
     padding: 1.5% 1%;
+    margin-bottom: 5%;
 
 }
 
@@ -186,12 +213,13 @@
 }
 
 .pcspec-search-tab{
-    background-color: #F2F2F2;
+    background-color: #fafafa;
     padding: 1%;
     padding-bottom: 0.8%;
     height: 5%;
     display: flex;
     flex-direction: row;
+    margin-right: 0.4%;
 }
 
 .link-to-ranking{
@@ -229,7 +257,7 @@
 .search-pcspec-input{
     width: 20vw;
     outline: none;
-    border: 1px solid #ddd;
+    border: 1px solid #e9e9e9;
     border-left: none;
     border-right: none;
     padding: 5px;
