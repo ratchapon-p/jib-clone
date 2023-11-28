@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import './CpuItem.css'
 import rz5 from '../../../assets/CpuItem/r5-5600x-37ghz.png'
 import i5_10400f from '../../../assets/CpuItem/i5-10400f-29ghz.png'
@@ -7,6 +7,10 @@ import i5_12400f from '../../../assets/CpuItem/i5-12400f-25ghz.png'
 import { Link } from 'react-router-dom'
 
 const CpuItem = () => {
+    // const [cpuBrandDetails, setCpuBrandDetails] = useState();
+    // const [cpuImageSrc, setCpuImageSrc] = useState();
+    // const [cpuPrice, setCpuPrice] = useState();
+
 
   return (
     <div className='cpuItem-main'>

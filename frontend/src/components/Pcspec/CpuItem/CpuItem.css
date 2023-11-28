@@ -9,6 +9,7 @@
 .cpuItem-details-text{
     font-weight: 600;
     padding: 1%;
+
 }
 
 .cpuItem-details-text .cpuItem-brand{
@@ -25,6 +26,8 @@
     flex-direction: column;
     padding: 0.5%;
     border: 1px dotted #ddd;
+
+
 }
 
 .cpuItem-details:hover{
@@ -52,6 +55,7 @@
 }
 
 .cpuItem-images-item{
+    height: auto;
     width: 55%;
     background: transparent;
 }

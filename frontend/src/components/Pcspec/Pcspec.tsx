@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from 'react';
 import "./Pcspec.css";
 import { Link } from "react-router-dom";
 import cpuIcon from "../../assets/Pcspec/cpu-ico.png";
@@ -17,8 +17,24 @@ import KeyboardIcon from "../../assets/Pcspec/keyboard-ico.png";
 import MouseIcon from "../../assets/Pcspec/mouse-ico.png";
 import { TrophyIcon, MagnifyingGlassIcon,ChevronUpDownIcon , FunnelIcon  } from "@heroicons/react/20/solid";
 import CpuItem from "./CpuItem/CpuItem";
+import MainboardItem from './MainboardItem/MainboardItem';
+import { act } from 'react-dom/test-utils';
+import VgaItem from './VgaItem/VgaItem';
 
 const Pcspec = () => {
+  const [activeComponent, setActiveComponent] = useState('cpu')
+
+  const showDetails = (component : any) =>{
+    setActiveComponent(component)
+  }
+
+  const getBorderStyle = (itemName : any) => ({
+    border: activeComponent === itemName ? '1px solid #ff9900' : '0.5px solid #ddd',
+    borderLeft: activeComponent === itemName ? '5px solid #ff9900' : '5px solid #ddd',
+    background: activeComponent === itemName ? '#F2F2F2' : '#fff',
+
+  });
+
   return (
     <div className="pcspec-bg">
       <div className="pcspec-main">
@@ -34,17 +50,17 @@ const Pcspec = () => {
             <div className="choose-spec-text">
               <h4>เลือกสเปคที่ท่านต้องการ</h4>
             </div>
-            <div className="choose-spec-unit">
+            <div className="choose-spec-unit" onClick={() => showDetails('Cpu')} style={getBorderStyle('Cpu')}>
               <img src={cpuIcon} className="pcspec-cpu-icon" />
               <p className="choose-spec-text-p">CPU</p>
               <div></div>
             </div>
-            <div className="choose-spec-unit">
+            <div className="choose-spec-unit" onClick={() => showDetails('Mainboard')} style={getBorderStyle('Mainboard')}>
               <img src={MBIcon} className="pcspec-mainboard-icon" />
               <p className="choose-spec-text-p">Mainboard</p>
               <div></div>
             </div>
-            <div className="choose-spec-unit">
+            <div className="choose-spec-unit" onClick={() => showDetails('Vga')} style={getBorderStyle('Vga')}>
               <img src={VGAIcon} className="pcspec-vga-icon" />
               <p className="choose-spec-text-p">VGA Card</p>
               <div></div>
@@ -109,6 +125,7 @@ const Pcspec = () => {
               <button className="create-pcspec">สร้างชุดสเปค</button>
             </div>
           </div>
+
           <div className="pcspec-item-list">
             <div className="pcspec-header-item">
               <div className="pcspec-search-tab">
@@ -132,13 +149,15 @@ const Pcspec = () => {
             </div>
             <div className="pcspec-item-total">
               <p className="pcspec-item-total-p">ทั้งหมด</p>&nbsp;
-              <p className="pcspec-item-total-text">'Cpu'</p>&nbsp;
+              <p className="pcspec-item-total-text">'{activeComponent}'</p>&nbsp;
               <p className="pcspec-item-total-p">59 รายการ</p>&nbsp;
               <p className="pcspec-item-total-p">จำนวน 1/1 หน้า | หน้าละ 80 รายการ</p>&nbsp;
 
             </div>
             <div className="cpu-list-item-details">
-              <CpuItem />
+              {activeComponent === 'Cpu' && <CpuItem />}
+              {activeComponent === 'Mainboard' && <MainboardItem />}
+              {activeComponent === 'Vga' && <VgaItem />}
             </div>
           </div>
         </div>
